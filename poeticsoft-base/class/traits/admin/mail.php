@@ -8,13 +8,13 @@ trait PB_Admin_Mail {
       'phpmailer_init', 
       function($phpmailer) {
 
-        $mail_host = get_option('poeticsoft_basic_settings_mail_host');
-        $mail_port = get_option('poeticsoft_basic_settings_mail_port');
-        $mail_smtpsecure = get_option('poeticsoft_basic_settings_mail_smtpsecure');
-        $mail_username = get_option('poeticsoft_basic_settings_mail_username');
-        $mail_password = get_option('poeticsoft_basic_settings_mail_password');
-        $mail_from = get_option('poeticsoft_basic_settings_mail_from');
-        $mail_fromname = get_option('poeticsoft_basic_settings_mail_fromname');
+        $mail_host = get_option('pb_settings_mail_host');
+        $mail_port = get_option('pb_settings_mail_port');
+        $mail_smtpsecure = get_option('pb_settings_mail_smtpsecure');
+        $mail_username = get_option('pb_settings_mail_username');
+        $mail_password = get_option('pb_settings_mail_password');
+        $mail_from = get_option('pb_settings_mail_from');
+        $mail_fromname = get_option('pb_settings_mail_fromname');
 
         $phpmailer->isSMTP();
         $phpmailer->SMTPAuth = true;
@@ -35,13 +35,13 @@ trait PB_Admin_Mail {
 
         error_log('wp_mail_failed');
         error_log(json_encode($wp_error));   
-        error_log('host: ' . get_option('poeticsoft_basic_settings_mail_host'));
-        error_log('port: ' . get_option('poeticsoft_basic_settings_mail_port'));
-        error_log('smtpsecure: ' . get_option('poeticsoft_basic_settings_mail_smtpsecure'));
-        error_log('username: ' . get_option('poeticsoft_basic_settings_mail_username'));
-        error_log('password: ' . get_option('poeticsoft_basic_settings_mail_password'));
-        error_log('from: ' . get_option('poeticsoft_basic_settings_mail_from'));
-        error_log('fromname: ' . get_option('poeticsoft_basic_settings_mail_fromname'));
+        error_log('host: ' . get_option('pb_settings_mail_host'));
+        error_log('port: ' . get_option('pb_settings_mail_port'));
+        error_log('smtpsecure: ' . get_option('pb_settings_mail_smtpsecure'));
+        error_log('username: ' . get_option('pb_settings_mail_username'));
+        error_log('password: ' . get_option('pb_settings_mail_password'));
+        error_log('from: ' . get_option('pb_settings_mail_from'));
+        error_log('fromname: ' . get_option('pb_settings_mail_fromname'));
       } ,
       10, 
       1 

@@ -36,7 +36,7 @@ trait PB_Admin_Fields {
             '<label for="' . $plugin_settings_prefix . $field['key'] . '">' . 
               __($field['title']) .
             '</label>',
-            function () use ($field){
+            function () use ($field, $plugin_settings_prefix){
 
               $value = get_option(
                 $plugin_settings_prefix . $field['key'], 

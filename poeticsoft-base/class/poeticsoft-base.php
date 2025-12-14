@@ -4,6 +4,7 @@ require_once __DIR__ . '/traits/utils/all.php';
 require_once __DIR__ . '/traits/admin/sections.php';
 require_once __DIR__ . '/traits/admin/page.php';
 require_once __DIR__ . '/traits/admin/fields.php';
+require_once __DIR__ . '/traits/admin/fields-mail.php';
 require_once __DIR__ . '/traits/admin/mail.php';
 require_once __DIR__ . '/traits/api/mail.php';
 require_once __DIR__ . '/traits/ui/login.php';
